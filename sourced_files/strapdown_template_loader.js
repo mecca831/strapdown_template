@@ -1,25 +1,23 @@
-//  For Strapdown 
-$.getScript("http://strapdownjs.com/v/0.2/strapdown.js");
+$('head').append('
+<!-- for Strapdown -->
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
 
-//  For TOC (jquery plugin) (see http://projects.jga.me/toc/#toc0) -->
-// 
-//  NOTE: HAD its problems:
-//    + [FIXED] its upper limit is not adjusted...
-//    + [FIXED] if TOC is lengthy, its bottom is not seenable - should have a vertical scroll or something...
-//    + [FIXED] in small windows, the div#content gets hidden behind... 
-//    The fixes were made by tweaking css/js code below
+<!-- for TOC (jquery plugin) (see http://projects.jga.me/toc/#toc0)
+  HAD its problems:
+    + [FIXED] its upper limit is not adjusted...
+    + [FIXED] if TOC is lengthy, its bottom is not seenable - should have a vertical scroll or something...
+    + [FIXED] in small windows, the div#content gets hidden behind... 
+    The fixes were made by tweaking css/js code below
 
-//$.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")      // already included
-$.getScript('https://raw.github.com/jgallen23/toc/master/dist/jquery.toc.min.js');
-
-// Add javascript to setup TOC
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+-->
+<script src="https://raw.github.com/jgallen23/toc/master/dist/jquery.toc.min.js"></script>
+<script>
 $('div#content').prepend('<div id="toc"></div>')
 $('#toc').toc({
   'selectors': 'h1,h2,h3,h4,h5'
 });
-
-// Add css
-$('head').append('
+</script>
 <style media="screen" type="text/css">
 #toc {
     top: auto;
@@ -71,4 +69,5 @@ $('head').append('
     box-shadow: inset -5px 0px 10px -5px #000;
 }
 </style>
+
 ')
