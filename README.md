@@ -12,6 +12,7 @@ It's intended to be used like a personal-notes-document:  written with text (vim
 ------------
   + It needs internet connection to download the javascript libs that it uses (would be nice to have an offline-stand-alone version)
   + I don't like that html-bottom of the template: its big, chunky and ugly. Maybe some day I'll have the time to make it tiny tiny like a couple lines.
+  + With more JQuery magic...  a ?mini-viewport? ... 
 
 
 #Many thanks to:
