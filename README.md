@@ -1,21 +1,30 @@
-#Description 
+# Description 
 ------------
-I started using Strapdown a few months ago to make the documentation of my personal projects    
-After some time using it, I made a few changes to the original Strapdown template, and built one for my self. 
-And here it is, the current version of it [strapdown_template.md.html](https://github.com/zipizap/strapdown_template/raw/master/strapdown_template.md.html)     
-Simply download it and fill-it-in with your documenting-info using markdown syntax.  
-Then save and open it in a browser, and you will see it all colorfull and cheery :)  
-
+I started using Strapdown a few months ago to make the documentation of my personal projects writting Markdown and consulting them latter with a browser
+After some time using it, I made a few changes to the original Strapdown template to add a TOC, which resulted in this template [strapdown_template.md.html]
 It's intended to be used like a personal-notes-document:  written with text (vim+markdown) and readed in a local browser
 
-#Can be improved
+
+# How to use it
+Download the template [strapdown_template.md.html],  fill-it-in with your documenting-info using markdown syntax, and save  
+Any time latter, when you need to consult it, open it in a browser, and you will see it all colorfull and cheery :)  
+
+# Costumize *vim* for `.md.html` files
+Configure **vim** to apply *markdown* syntax to `md.html` files 
+```
+cd ~/.vim
+mkdir -p ftdetect
+wget 
+```
+
+# Can be improved
 ------------
   + It needs internet connection to download the javascript libs that it uses (would be nice to have an offline-stand-alone version)
   + I don't like that html-bottom of the template: its big, chunky and ugly. Maybe some day I'll have the time to make it tiny tiny like a couple lines.
   + With more JQuery magic...  a ?mini-viewport? ... 
 
 
-#Many thanks to:
+# Many thanks to:
 -----------
   + [Strapdown.js](http://strapdownjs.com/)
   + [Jquery TOC plugin](http://projects.jga.me/toc/#toc0)
@@ -24,3 +33,4 @@ It's intended to be used like a personal-notes-document:  written with text (vim
 
 
 
+[strapdown_template.md.html]:https://github.com/zipizap/strapdown_template/raw/master/strapdown_template.md.html 
