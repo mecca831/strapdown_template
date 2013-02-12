@@ -12,9 +12,10 @@ Any time latter, when you need to consult it, open it in a browser, and you will
 # Costumize *vim* for `.md.html` files
 Configure **vim** to apply *markdown* syntax to `md.html` files 
 ```
-cd ~/.vim
-mkdir -p ftdetect
-wget 
+mkdir -p  ~/.vim/ftdetect 
+cd ~/.vim/ftdetect
+wget https://raw.github.com/zipizap/strapdown_template/master/vim/ftdetect/md.html.vim  
+# from now on, vim will use markdown-syntax on '.md.html' files
 ```
 
 # Can be improved
