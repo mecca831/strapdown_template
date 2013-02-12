@@ -8,7 +8,9 @@ $('#toc').toc({
 //  1. Inline style (declared inside the html tag)  (see http://www.w3schools.com/css/css_howto.asp)
 // Turns out that the Strapdown library places its Strapdown-css rules in the header section, and for the TOC-css to function properly
 // it must be loaded with higher priority than Strapdown-css.
-// To make TOC-css load before the Strapdown-css, we place the css rules inside <head> as its first child, using JQuery.prepend
+// To make TOC-css load before the Strapdown-css:
+//    + [DOES NOT WORK] we load TOC-css from an external css file, inside the head section, as first child
+//    + we embed the TOC-css rules inside <head> as its first child, using JQuery.prepend
 // There you go, there is a reason for it, and I do admit that is far from perfect - so if you ever read this and know a better
 // solution, please fork + improve + pull and send me a message, I'll be glad to see it looking better :)
 
