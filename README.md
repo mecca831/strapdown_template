@@ -1,16 +1,18 @@
 # Description 
 ------------
-I started using Strapdown a few months ago to make the documentation of my personal projects writting Markdown and consulting them latter with a browser
-After some time using it, I made a few changes to the original Strapdown template to add a TOC, which resulted in this template [strapdown_template.md.html]
-It's intended to be used like a personal-notes-document:  written with text (vim+markdown) and readed in a local browser
+I started using Strapdown a few months ago to make the documentation of my personal projects writting Markdown and consulting them latter with a browser  
+After some time using it, I made a few changes to the original Strapdown template to add a TOC, which resulted in this template [strapdown_template.md.html]  
+It's intended to be used like a personal-notes-document:  written with text (vim+markdown) and readed in a local browser  
 
 
 # How to use it
-Download the template [strapdown_template.md.html],  fill-it-in with your documenting-info using markdown syntax, and save  
-Any time latter, when you need to consult it, open it in a browser, and you will see it all colorfull and cheery :)  
+------------
+  + Download the template [strapdown_template.md.html],  fill-it-in with your documenting-info using markdown syntax, and save    
+  + Any time latter, when you need to consult it, open it in a browser, and you will see it all colorfull and cheery :)    
 
-# Costumize *vim* for `.md.html` files
-Configure **vim** to apply *markdown* syntax to `md.html` files 
+
+# Costumize *vim* to use markdown syntax on `.md.html` files
+------------
 ```
 mkdir -p  ~/.vim/ftdetect 
 cd ~/.vim/ftdetect
