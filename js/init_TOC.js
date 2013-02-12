@@ -12,7 +12,7 @@ $('#toc').toc({
 // There you go, there is a reason for it, and I do admit that is far from perfect - so if you ever read this and know a better
 // solution, please fork + improve + pull and send me a message, I'll be glad to see it looking better :)
 
-$('head').prepend('<link href="https://github.com/zipizap/strapdown_template/raw/master/css/TOC.css" rel="stylesheet">');
+$('head').append('<link href="https://github.com/zipizap/strapdown_template/raw/master/css/TOC.css" rel="stylesheet">');
 //$('head').prepend('' +
 //    '<style media="screen" type="text/css">  \n' +
 //    '#toc {  \n' +
