@@ -2,17 +2,18 @@ $('div#content').prepend('<div id="toc"></div>');
 $('#toc').toc({
     'selectors': 'h1,h2,h3,h4,h5'
 });
-// This realy looks ugly, but there is a reason for it, and has to do with the normal css loading priority (lower has + priority):
-//  3. external style sheets
+
+// This next part realy looks ugly, but there is a reason for it, and has to do with the normal css loading priority:
+//  3. external style sheets (inside head section)    (bigger has - priority, lower has + priority)
 //  2. internal style sheets (inside head section)
-//  1. Inline style (declared inside the html tag)  (see http://www.w3schools.com/css/css_howto.asp)
-// Turns out that the Strapdown library places its Strapdown-css rules in the header section, and for the TOC-css to function properly
-// it must be loaded with higher priority than Strapdown-css.
-// To make TOC-css load before the Strapdown-css:
-//    + [DOES NOT WORK] we load TOC-css from an external css file, inside the head section, as first child
-//    + we embed the TOC-css rules inside <head> as its first child, using JQuery.prepend
-// There you go, there is a reason for it, and I do admit that is far from perfect - so if you ever read this and know a better
-// solution, please fork + improve + pull and send me a message, I'll be glad to see it looking better :)
+//  1. Inline style (declared inside any html tag)    (see http://www.w3schools.com/css/css_howto.asp)
+// Turns out that the Strapdown library places its Strapdown-css rules as an external style sheet in the header section, and for 
+// the TOC-css to function properly it must be loaded with higher priority than Strapdown-css.
+// To make TOC-css load *before* the Strapdown-css, I tried severall things and only one worked:
+//    + [DOES NOT WORK] load TOC-css from an external css file, inside the head section, as first child
+//    + [----WORKS----] embed the TOC-css rules with <style>, inside the head section, as its first child
+// There you go, there is a reason for reaching all this ugliness and I do admit that is far from perfect - so if you ever read this 
+// and know a better solution, please fork+improve+pull&message me, as I'll be glad to see it looking better :)
 
 $('head').prepend('' +
     '<style media="screen" type="text/css">  \n' +
