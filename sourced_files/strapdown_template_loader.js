@@ -1,4 +1,4 @@
-$('head').append('
+$("xmp").append('
 <!-- for Strapdown -->
 <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
 
@@ -13,9 +13,9 @@ $('head').append('
 -->
 <script src="https://raw.github.com/jgallen23/toc/master/dist/jquery.toc.min.js"></script>
 <script>
-$('div#content').prepend('<div id="toc"></div>')
-$('#toc').toc({
-  'selectors': 'h1,h2,h3,h4,h5'
+$("div#content").prepend(\'<div id="toc"></div>\')
+$("#toc").toc({
+  "selectors": "h1,h2,h3,h4,h5"
 });
 </script>
 <style media="screen" type="text/css">
