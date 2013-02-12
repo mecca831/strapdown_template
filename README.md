@@ -3,8 +3,8 @@
 I use Strapdown to make the documentation of personal projects    
 After some time, I made a few changes to the Strapdown, and built a template. from where to start any new document.    
 And here it is, the current version of it [strapdown_template.md.html](https://github.com/zipizap/strapdown_template/raw/master/strapdown_template.md.html)     
-Simply download it and fill-it-in with your documenting-info using markdown syntax.
-Then save and open it in a browser, and you will see it all colorfull and cheery :)
+Simply download it and fill-it-in with your documenting-info using markdown syntax.  
+Then save and open it in a browser, and you will see it all colorfull and cheery :)  
 
 
 #Can be improved
