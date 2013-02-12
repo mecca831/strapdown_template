@@ -12,14 +12,92 @@
   + a Table Of Contents (TOC) will be automatically created and placed in the top of your webpage
   + at any time, open this .html file in a browser and see how it finally looks :)
   + drop a comment in my blog [zipizap.wordpress.com](http://zipizap.wordpress.com/) if you like it, or for anything (positively) related
+--------------------
+
+
+# Strapdown.js
+  * see [strapdown homepage][ref1]
+  * every documenting file should:
+    + have .md.html extension (for vim and browser)
+    + have html header and botom
+    + for ease, use [this custom-template.md.html][custom-template.md.html]
+
+[ref1]: http://strapdownjs.com/
+[ref2]: http://www.darkcoding.net/software/markdown-quick-reference/
+[ref3]: http://daringfireball.net/projects/markdown/syntax
+[ref4]: http://support.mashery.com/docs/customizing_your_portal/Markdown_Cheat_Sheet/
+[custom-template.md.html]: ./custom-template.md.html 
+---------------------
+
+
+#Markdown quick ref 
+see [quick ref][ref4] and [official syntax ref][ref3] and maybe this [simple ref][ref2]
+
+Separate paragraphs with 1 empty line, or else the lines will be joined together
+
+Separate other stuff with 2 empty lines
+
+
+# Header lvl 1
+## Header lvl 2
+### Header lvl 3
 
 
 
-## Markdown good manners
-  * paragraphs separated by 1 empty line, sections by 2 empty lines
-  * see:
-    * [markdrown quickref](http://support.mashery.com/docs/customizing_your_portal/Markdown_Cheat_Sheet/)
-    * [markdown offic ref](http://daringfireball.net/projects/markdown/syntax)
+[link text displayed][link_id]
+
+[link text displayed](http://link.url)
+
+[link text displayed][localFile]
+
+...
+[link_id]: http://the.link.url
+[localFile]: ./fileInSameDir.md.html 
+
+
+
+> This is block quoted
+
+    # small multiline code: 4 or more spaces
+
+
+``` 
+big
+multiline
+code escaped with 3 backticks
+```
+(unfortunately vim does not highligh the previous correctly...)
+
+------
+
+
+inline code is marked `with backticks`
+
+
+* unordered lists are made with `*, + or - `
+* list-item1
+* list-item2
+
+
+1. numbered list with number and period
+2. list-item2
+
+
+horizontal line with 3-or-more -----, separated from all else by 1 empty line
+
+------
+
+
+
+_italic_    or    *italic*
+__bold__    or    **bold**
+
+
+Escaping chars like \*not italic\*
+
+
+![Alt text](/files/expand_arrow.JPG "Image call example")
+
 
 
 
