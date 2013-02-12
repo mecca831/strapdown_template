@@ -1,5 +1,5 @@
 //  For Strapdown 
-$.getScript("http://strapdownjs.com/v/0.2/strapdown.js")
+$.getScript("http://strapdownjs.com/v/0.2/strapdown.js");
 
 //  For TOC (jquery plugin) (see http://projects.jga.me/toc/#toc0) -->
 // 
@@ -10,7 +10,7 @@ $.getScript("http://strapdownjs.com/v/0.2/strapdown.js")
 //    The fixes were made by tweaking css/js code below
 
 //$.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")      // already included
-$.getScript('https://raw.github.com/jgallen23/toc/master/dist/jquery.toc.min.js')
+$.getScript('https://raw.github.com/jgallen23/toc/master/dist/jquery.toc.min.js');
 
 // Add javascript to setup TOC
 $('div#content').prepend('<div id="toc"></div>')
