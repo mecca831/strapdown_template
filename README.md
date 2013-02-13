@@ -22,6 +22,7 @@ wget https://raw.github.com/zipizap/strapdown_template/master/vim/ftdetect/md.ht
 
 # Can be improved
 ------------
+  + After clicking in TOC to jump to a target, the target itself gets hidden below the navbar - this is because of the navbar css rules and the TOC code...
   + It needs internet connection to download the javascript libs that it uses (would be nice to have an offline-stand-alone version)
   + I don't like that html-bottom of the template: its big, chunky and ugly. Maybe some day I'll have the time to make it tiny tiny like a couple lines.
   + With more JQuery magic...  a ?mini-viewport? ... 
