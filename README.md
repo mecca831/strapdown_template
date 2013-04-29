@@ -32,7 +32,7 @@ wget https://raw.github.com/zipizap/strapdown_template/master/vim/ftdetect/md.ht
   + [Strapdown.js](http://strapdownjs.com/)
   + [Jquery TOC plugin](http://projects.jga.me/toc/#toc0)
   + JQuery, Bootstrap and all other infamously renowned projects who made this possible
-  + all the open source community and happy people :)  (not joking!)
+  + all the open source community and it's bonding attitude that grows (now more than ever) that important resource: the people's morale :)
 
 
 
