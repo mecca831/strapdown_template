@@ -1,6 +1,6 @@
 $('div#content').prepend('<div id="toc"></div>');
 $('#toc').toc({
-    'selectors': 'h1,h2,h3,h4,h5'
+    'selectors': 'h1,h2,h3,h4,h5,h6'
 });
 
 // This next part realy looks ugly, but there is a reason for it, and has to do with the normal css loading priority:
@@ -45,21 +45,24 @@ $('head').prepend('' +
     '    display: block;  \n' +
     '}  \n' +
     '#toc .toc-h1 {  \n' +
-    '    padding-left: 5px;  \n' +
-    '}  \n' +
-    '  \n' +
-    '#toc .toc-h2 {  \n' +
     '    padding-left: 10px;  \n' +
     '}  \n' +
     '  \n' +
-    '#toc .toc-h3 {  \n' +
+    '#toc .toc-h2 {  \n' +
     '    padding-left: 20px;  \n' +
     '}  \n' +
-    '#toc .toc-h4 {  \n' +
+    '  \n' +
+    '#toc .toc-h3 {  \n' +
     '    padding-left: 30px;  \n' +
     '}  \n' +
-    '#toc .toc-h5 {  \n' +
+    '#toc .toc-h4 {  \n' +
     '    padding-left: 40px;  \n' +
+    '}  \n' +
+    '#toc .toc-h5 {  \n' +
+    '    padding-left: 50px;  \n' +
+    '}  \n' +
+    '#toc .toc-h6 {  \n' +
+    '    padding-left: 60px;  \n' +
     '}  \n' +
     '  \n' +
     '#toc .toc-active {  \n' +
