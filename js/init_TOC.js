@@ -5,6 +5,7 @@ $('div#content').before('<div id="toc" class="span3"></div>');
 $('#toc').toc({
     'selectors': 'h1,h2,h3,h4,h5,h6'
 });
+$('#toc ul').addClass('well sidebar-nav affix');
 
 // This next part realy looks ugly, but there is a reason for it, and has to do with the normal css loading priority:
 //  3. external style sheets (inside head section)    (bigger has - priority, lower has + priority)
@@ -25,11 +26,8 @@ $('head').prepend('' +
     '    left: 0px;  \n' +
     '    height: 100%;  \n' +
     '    position: static;  \n' +
-    '    background: #333;  \n' +
-    '    box-shadow: inset -5px 0 5px 0px #000;  \n' +
-    '    width: auto;  \n' +
+    '    width: 258px;  \n' +
     '    padding-top: 20px;  \n' +
-    '    color: #fff;  \n' +
     '}  \n' +
     '  \n' +
     '#toc ul {  \n' +
@@ -43,7 +41,6 @@ $('head').prepend('' +
     '}  \n' +
     '  \n' +
     '#toc a {  \n' +
-    '    color: #fff;  \n' +
     '    text-decoration: none;  \n' +
     '    display: block;  \n' +
     '}  \n' +
@@ -69,8 +66,10 @@ $('head').prepend('' +
     '}  \n' +
     '  \n' +
     '#toc .toc-active {  \n' +
-    '    background: #336699;  \n' +
-    '    box-shadow: inset -5px 0px 10px -5px #000;  \n' +
+    '    background: #0088CC;  \n' +
+    '}  \n' +
+    '#toc .toc-active a {  \n' +
+    '    color: #fff;  \n' +
     '}  \n' +
     '</style>  \n' +
     '');
