@@ -1,4 +1,7 @@
-$('div#content').prepend('<div id="toc"></div>');
+$('div#content').wrap('<div class="row-fluid" />');
+$('div.row-fluid').wrap('<div class="container-fluid" />');
+$('div#content').removeClass('container').addClass('span9');
+$('div#content').before('<div id="toc" class="span3"></div>');
 $('#toc').toc({
     'selectors': 'h1,h2,h3,h4,h5,h6'
 });
